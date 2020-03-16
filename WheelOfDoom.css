@@ -1,0 +1,75 @@
+body {
+  background-color: coral;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+nav {
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo {
+  background-image: url(logo.png) 120%;
+  width: 90px;
+  height: 90px;
+  top: 0;
+  margin-left: 30px;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  margin-top: 5%;
+  display: inline-block;
+  position: absolute;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button {
+  background-color: white;
+  color: rgb(10, 1, 1);
+  font-size: 18px;
+  font-family: sans-serif;
+  border-radius: 26px;
+  border: 4px solid #2e2e29;
+  cursor: pointer;
+  text-align: center;
+  width: 160px;
+  height: 18px;
+  margin-left: 20%;
+  margin-top: 15%;
+  display: block;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: #30343f;
+}
+
+.dead {
+  position: absolute;
+  top: 34%;
+  left: 55%;
+}
+
+.alive-list {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.dead-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
