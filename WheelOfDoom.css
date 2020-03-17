@@ -1,46 +1,111 @@
 body {
-  background-color: coral;
-  font-family: "Nunito Sans", sans-serif;
+  background-color: #ececec;
+  /*font-family: 'Homemade Apple', cursive;
+  font-family: 'Nunito Sans'; sans-serif;*/
+  font-family: 'Arvo', serif;
+  height: 100%;
 }
 
+
 nav {
-  background-color: yellow;
-  
+  background-color: #ececec;
+  position: fixed;
+  top: 0 ;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  list-style: none;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .logo {
-  background-image: url(logo.png) 120%;
+  background-image: url(logo.png);
   width: 90px;
   height: 90px;
-
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  left: 1%;
+ 
 }
 
-header {
-  width: 100%;
-  height: 10%;
 
+header {
+  width: 25%;
+  height: 50%;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  border-color: black;
+  display: inline-block;
+}
+
+#skull {
+  width: 60%;
+  display: block;
+  margin: auto;
 }
 
 h1 {
   text-align: center;
+  font-size: 40px;
+  margin: 5% 0 0 0;
+}
+
+hr {
+  height: 3px;
+  background-color:#cccccc;
+  position: relative;
+  width: 60%;
+}
+
+#line-1 {
+  position: absolute; 
+  top: 50%;
+  left: 20%;
+}
+
+h3 {
+  color: #2b2b2b;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+}
+
+#line-2 {
+  position: absolute;
+  top: 58%;
+  left: 20%;
 }
 
 .button {
   background-color: white;
   color: rgb(10, 1, 1);
-  font-size: 18px;
-  font-family: sans-serif;
+  font-size: 20px;
   border-radius: 26px;
   border: 4px solid #2e2e29;
   cursor: pointer;
+  display: inline-block;
   text-align: center;
-  width: 160px;
-  height: 18px;
-  margin-left: 20%;
-  margin-top: 15%;
-  display: block;
-  padding: 10px 0;
+  vertical-align: middle;
+  width: 10%;
+  height: 3%;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 29%;
+  padding: 10px 10px 10px 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.8s;
+}
+
+.button:hover{
+  background-color: maroon;
+  color:#cccccc;
+  border-radius: 26px;
+  border: 4px solid #cccccc ;
 }
 
 a {
@@ -48,14 +113,55 @@ a {
   color: #30343f;
 }
 
+.p {
+  text-decoration: none;
+  color: blue;
+}
+
 .dead {
- 
+ position: absolute;
+ top: 70%;
+ margin-top: 5px;
+ margin-left: 37%;
+ text-align: center;
 }
 
 .alive-list {
-
+text-decoration: underline;
+position: absolute;
+left: 60%;
+top: 78%;
 }
 
 .dead-list {
+text-decoration: underline;
+position: absolute;
+left: 20%;
+top: 78%;
+}
 
+
+footer {
+  background-color:#cccccc;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  list-style: none;
+}
+
+
+.repository {
+  color:black;
+  z-index: 1;
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  padding: 5px;
+}
+
+.repository:hover{
+  border-bottom: 2px solid black ;
 }
