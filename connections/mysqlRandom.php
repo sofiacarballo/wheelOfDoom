@@ -22,12 +22,8 @@
                 $resultado= $conexion->query($query);
                 while($row=$resultado->fetch_assoc()){
             ?> 
-                <tr>
-                          <td> <?php echo $row['name']; ?> </td>
-
-
-                </tr>
-            <?php
+                <tr><td> <?php echo $row['name']; ?> </td></tr>
+            <?php 
                 }
             ?>
             </tbody>
