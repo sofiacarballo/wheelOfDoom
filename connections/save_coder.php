@@ -5,7 +5,7 @@ include("connect.php");
     $status= $_POST['status'];
     
     $query= "INSERT INTO coders_list(name,status) VALUE('$name','$status')";
-    $result= $connection->query($query);
+    $result= $connect->query($query);
 
     if($result){
         echo "Add New Coder is OK";
