@@ -6,13 +6,8 @@ include("connect.php");
     
     $query= "INSERT INTO coders_list(name,status) VALUES('$name','$status')";
     $result= $connect->query($query);
-
-    if($result){
-        echo "Add New Coder is OK";
-    }
-    else{
-        echo "Add New Coder ERROR";
-    }
+ 
+    header("Location: http://localhost/phpfactoriaf5/wheelOfDoom/index.php"); die();
 
     $connect->close();
 ?>
