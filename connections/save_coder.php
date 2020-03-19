@@ -4,7 +4,7 @@ include("connect.php");
     $name= $_POST['name'];
     $status= $_POST['status'];
     
-    $query= "INSERT INTO coders_list(name,status) VALUE('$name','$status')";
+    $query= "INSERT INTO coders_list(name,status) VALUES('$name','$status')";
     $result= $connect->query($query);
 
     if($result){
@@ -13,4 +13,7 @@ include("connect.php");
     else{
         echo "Add New Coder ERROR";
     }
+
+    $connect->close();
 ?>
+
