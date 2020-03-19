@@ -7,4 +7,7 @@ while($row=$result->fetch_assoc()){
 ?> 
 <?php echo '<tr><td>' . $row['name'] . '</td></tr>';
  }
+
+$connect->close();
+
  ?>
