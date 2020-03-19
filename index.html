@@ -25,39 +25,52 @@
       <hr id="line-2">
     </div>
 
-    <div>
-      <a class="button kill" href="#">KILL A CODER</a>
-      <a class="button add" href="#"> ADD A CODER</a>
-    </div>
+    <section>
+      <label for="dieNameButton">
+        <input class="button kill" type="submit" name="dieNameButton" value="KILL A CODER">
+      </label>
+      <label for="dieName">
+        <input class="text-box die-name" type="text" id=dieName required name="Name" placeholder="Name">
+      </label>
+    </section>
 
-    <section class="died">
-      Display dead coder name here
+    <section>
+       <form action="title php file.php" method="post">
+        <label for="addnameButton"> 
+          <input class="button add" type="submit" name="addNameButton" value="ADD A CODER">
+        </label>
+        <label for="addName">
+          <input class="text-box add-name" type="text" id=addName required name="Name" placeholder="Name">
+        </label>
+      </form>
+    </section>
+
+    <section class="deadAliveNumber">
+      <label for="deadNumber">Dead</label>
+      <input class="number" type="text" id=deadNumber required name="" value="">
+      <label for="aliveNumber">Alive</label>
+      <input class="number" type="text" id=aliveNumber required name="" value="">
     </section>
 
     <section class="list alive">
       <h4><u>Still alive</u></h4>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
+      <p>1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        1<br>
+        </p>
     </section>
 
     <section class="list dead">
       <h4><u>Dead</u></h4>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
+      <p>0<br>
+        0<br>
+        0<br>
+        0<br>
+        </p>
     </section>
   
     <footer>

@@ -88,8 +88,8 @@ h3 {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  width: 10%;
-  height: 3%;
+  width: 12%;
+  height: 7%;
   margin-left: 40%;
   margin-top: 29%;
   padding: 10px 10px 10px 10px;
@@ -106,14 +106,13 @@ h3 {
 
 .button.kill{
   position: absolute;
-  margin-left: 40%;
+  margin-left: 19%;
   margin-top: 29%;
-  transition: 0.8s;
 }
 
 .button.add{
   position: absolute;
-  margin-left: 65%;
+  margin-left: 54%;
   margin-top: 29%;
 }
 
@@ -122,13 +121,38 @@ a {
   color: #30343f;
 }
 
-.died {
-color: maroon;
+.text-box {
+  background: #cccccc;
+  color: maroon;
+}
+
+.text-box.die-name {
+    position: absolute;
+    margin-top: 29.7%;
+    margin-left: 33%;
+    height: 25px;
+    width: 11.5%;
+  }
+
+.text-box.add-name {
+  position: absolute;
+  margin-top: 29.7%;
+  margin-left: 68%;
+  height: 25px;
+  width: 11.5%;
+}
+
+.deadAliveNumber {
+ color: maroon;
  position: absolute;
  top: 73%;
  margin-top: 5px;
- margin-left: 37%;
+ margin-left: 34%;
  text-align: center;
+}
+
+.number {
+  background-color:#cccccc
 }
 
 .list.dead {
@@ -156,7 +180,7 @@ footer {
   left: 0;
   width: 100%;
   height: 10%;
-  list-style: none;
+  list-style: none; 
 }
 
 .repository {
