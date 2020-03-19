@@ -122,22 +122,26 @@ a {
 .text-box {
   background: #cccccc;
   color: maroon;
+  height: 25px;
+  width: 11.5%;
 }
 
 .text-box.die-name {
   position: absolute;
   margin-top: 29.7%;
   margin-left: 33%;
-  height: 25px;
-  width: 11.5%;
 }
 
 .text-box.add-name {
   position: absolute;
   margin-top: 29.7%;
   margin-left: 68%;
-  height: 25px;
-  width: 11.5%;
+}
+
+.text-box.status-name {
+  position: absolute;
+  margin-top: 29.7%;
+  margin-left: 80%;
 }
 
 .deadAliveNumber {
