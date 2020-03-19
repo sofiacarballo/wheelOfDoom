@@ -1,33 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>connections</title>
-</head>
-<body>
-<center>
-        <table bgcolor="grey" border="3">
-            <thead>
-                <tr>
-                    <th colspan="1">Kill </th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php
+<?php
+include("connect.php");
 
-                include("connections.php");
-
-                $query="SELECT * FROM lista_coders WHERE status='Alive'ORDER BY RAND() LIMIT 1";
-                $resultado= $conexion->query($query);
-                while($row=$resultado->fetch_assoc()){
-            ?> 
-                <tr><td> <?php echo $row['name']; ?> </td></tr>
-            <?php 
-                }
-            ?>
-            </tbody>
-        </table>
-    </center>  
-</body>
-</html>
+$query="SELECT * FROM coders_list WHERE status='Alive'ORDER BY RAND() LIMIT 1";
+$result= $connection->query($query);
+while($row=$result->fetch_assoc()){
+?> 
+<?php 
+echo $row['name']; 
+return $row['id'];
+}?>
