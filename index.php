@@ -25,33 +25,31 @@
       <hr id="line-2">
     </div>
 
-    <section>
+   <section>
       <form action="connections\mysqlRandom.php">
         <label for="dieNameButton">
           <input class="button kill" type="submit" name="dieNameButton" value="KILL A CODER">
         </label>
         <label for="dieName">
           <table class="text-box die-name" type="text" id=dieName required name="Name">
-           <!--  <tr>
-              <td>
-              </td>
+          <tr>
              <td>
              <?php include('connections\mysqlRandom.php')?>
               </td>
-              </tr> -->
+              </tr>
           </table>
         </label>
       </form>
     </section>
-
+    
     <section>
        <form action="connections/save_coder.php"  method="post"> 
         <label for="addNameButton"> 
           <input class="button add" type="submit" name="addNameButton" value="ADD A CODER">
         </label>
         <label for="addName">
-          <input class="text-box add-name" type="text" id=addName required name="name" placeholder="Name">
-          <select class="text-box status-name" id=addName required name="status">
+          <input class="text-box add-name" type="text" id=addName required name="Name" placeholder="Name">
+          <select class="text-box status-name" id=addName required name="Status">
             <option value="Alive" selected>Alive</option>
             <option value="Dead">Dead</option>
           </select>
@@ -73,7 +71,7 @@
           <th><u>Still alive</u></th>
           <td>
             <?php include('connections\listAlive.php')?>
-           </td>
+          </td>
         </tr>
      </table>
     </section>
@@ -84,7 +82,7 @@
           <th><u>Dead</u></th>
           <td>
             <?php include('connections\listDead.php')?>
-           </td>
+          </td>
         </tr>
      </table>
     </section>

@@ -11,7 +11,7 @@ echo '<tr><td>' . $row['name'] . '</td></tr>';
 
 return $row['id'];
 
-header("Location: http://localhost/phpfactoriaf5/wheelOfDoom/index.php"); die();
+header("Location: http://localhost/phpfactoriaf5/wheelOfDoomSofi2/index.php"); die();
 
 $connect->close();
 }
