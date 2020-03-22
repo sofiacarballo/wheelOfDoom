@@ -34,8 +34,6 @@
           <table class="text-box die-name" type="text" id=dieName required name="Name">
             <tr>
               <td>
-              </td>
-              <td>
                   <?php include('connections\mysqlRandom.php')?>
               </td> 
               </tr>
