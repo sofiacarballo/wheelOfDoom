@@ -7,7 +7,8 @@ $result= $connect->query($query);
 while($row=$result->fetch_assoc()){
 ?> 
 <?php 
-echo '<tr><td>' . $row['name'] . '</td></tr>'; 
+echo '<tr><td>' . $row['name'] . '</td></tr>';
+
 return $row['id'];
 
 header("Location: http://localhost/phpfactoriaf5/wheelOfDoom/index.php"); die();

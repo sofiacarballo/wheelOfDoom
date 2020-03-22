@@ -32,19 +32,18 @@
         </label>
         <label for="dieName">
           <table class="text-box die-name" type="text" id=dieName required name="Name">
-            <tr>
+           <!--  <tr>
               <td>
               </td>
-             <!-- <td>
-                  <?php include('connections\mysqlRandom.php')?>
-              </td> -->
-              </tr>
+             <td>
+             <?php include('connections\mysqlRandom.php')?>
+              </td>
+              </tr> -->
           </table>
         </label>
       </form>
     </section>
 
-   
     <section>
        <form action="connections/save_coder.php"  method="post"> 
         <label for="addNameButton"> 
