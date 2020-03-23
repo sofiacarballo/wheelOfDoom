@@ -43,7 +43,7 @@
     </section>
     
     <section>
-       <form action="connections/save_coder.php"  method="post"> 
+       <form action="connections/save_coder.php" method="post"> 
         <label for="addNameButton"> 
           <input class="button add" type="submit" name="addNameButton" value="ADD A CODER">
         </label>
