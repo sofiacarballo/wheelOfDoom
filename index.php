@@ -34,7 +34,7 @@
           <table class="text-box die-name" type="text" id=dieName required name="Name">
           <tr>
              <td>
-             <?php include('connections\mysqlRandom.php')?>
+            
               </td>
               </tr>
           </table>
@@ -43,17 +43,15 @@
     </section>
     
     <section>
-       <form action="connections/save_coder.php" method="post"> 
-        <label for="addNameButton"> 
+       <form action="connections\save_coder.php" method="post"> 
           <input class="button add" type="submit" name="addNameButton" value="ADD A CODER">
-        </label>
-        <label for="addName">
-          <input class="text-box add-name" type="text" id=addName required name="Name" placeholder="Name">
-          <select class="text-box status-name" id=addName required name="Status">
-            <option value="Alive" selected>Alive</option>
-            <option value="Dead">Dead</option>
-          </select>
-        </label>
+
+          <input class="text-box add-name" type="text" id=addName required name="name" placeholder="Name">
+            <select class="text-box status-name" id=addName required name="status">
+              <option value="Alive" selected>Alive</option>
+              <option value="Dead">Dead</option>
+            </select>
+
       </form>
     </section>
  
